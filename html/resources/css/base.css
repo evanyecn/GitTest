@@ -77,3 +77,7 @@ input, button, select, textarea {
 }
 
 /* end public */
+table {
+    width: 795px;
+    margin: 0 auto;
+}
