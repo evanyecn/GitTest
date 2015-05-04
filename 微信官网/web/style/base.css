@@ -1,0 +1,176 @@
+
+@charset "utf-8";
+/* CSS Document */
+body, div,p,ul,dl,iframe{
+	margin:0 auto;
+	padding:0;
+}
+body{font:24px/28px "微软雅黑","\5B8B\4F53",Arial, Helvetica, sans-serif;
+    color: #000;
+	font-style: normal;
+	width:100%;
+}
+/*保证各浏览器下 <input><button><a> 定义的按钮尺寸一样*/
+button::-moz-focus-inner,input[type="button"]::-moz-focus-inner { border:none; padding:0; }
+.btn,form input{
+    line-height:normal;
+	*overflow:visible ;
+}
+ul li{
+	list-style:none;
+}
+img{border:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:bold;font-family:"微软雅黑";line-height: 30px;margin: 0;padding: 0;}
+h2{font-size: 1.5em;}
+h3{font-size: 2.4em;}
+h4{font-size:18px;}
+
+/*定位*/
+.fl{float:left ;}
+.fr{float:right ;}
+.mt2{margin-top:2px;}
+.mt5{margin-top:5px ;}
+.mt8{margin-top:8px ;}
+.mt10{margin-top:10px ;}
+.mt12{margin-top:12px ;}
+.mt16{margin-top:16px ;}
+.mt20{margin-top:20px ;}
+.mt30{margin-top:30px ;}
+.mt50{margin-top:50px ;}
+.mt80{margin-top:80px ;}
+.mb10{margin-bottom:10px ;_margin-bottom:5px;}
+.mb20{margin-bottom:20px ;_margin-bottom:10px;}
+.mr5{margin-right:5px ;_margin-right:2px;}
+.mr10{margin-right:10px ;_margin-right:5px;}
+.mr15{margin-right:15px;_margin-right:7px; }
+.mr36{margin-right:36px; _margin-right:18px;}
+.ml5{margin-left:5px ;_margin-left:2px ;}
+.ml10{margin-left:10px ;_margin-left:5px ;}
+.ml15{margin-left:15px ;_margin-left:7px ;}
+.ml20{margin-left:20px ;_margin-left:10px ;}
+.ml25{margin-left: 25px ;_margin-left:12px ;}
+.ml29{margin-left: 29px ;_margin-left:14px ;}
+.ml30{margin-left: 30px ;_margin-left:15px ;}
+.ml35{margin-left: 35px ;_margin-left:17px ;}
+.ml52{margin-left: 52px ;_margin-left:26px ;}
+.ml85{margin-left: 85px ;_margin-left:42px ;}
+.ml95{margin-left: 95px ;_margin-left:47px ;}
+/*文字排版*/
+.f12{font-size:12px;}
+.f13{font-size:13px;}
+.f14{font-size:14px;}
+.f15{font-size:15px;}
+.f16{font-size:16px;}
+.f20{font-size:20px;}
+.fb{font-weight:bold}
+.fn{font-weight:normal;}
+.t_idnex{text-indent:2em;}
+.lh150{line-height:150%;}
+.lh180{line-height:180%;}
+.lh200{line-height:200%;}
+.lh33{line-height: 33px;}
+.unl{text-decoration:underlline;}
+.no_unl{text-decoration:none;}
+.tc{text-align:center;}
+.tl{text-align:left}
+.tr{text-align:right;}
+.tz{text-indent:2em;}
+/*宽度*/
+.w50{width: 50px;}
+.w52{width: 52px;}
+.w80{width: 80px;}
+.w100{width: 100px;}
+.h10{height: 10px;}
+.h35{height: 35px;}
+.h80{height: 80px;}
+.h100{height: 100px;}
+.h120{height: 120px;}
+/*清除浮动*/
+.cle{clear:both;height:1px;
+     margin-top:-1px;
+     overflow:hidden;
+}
+.dpi{display: inline;}
+.pr{position: relative;}
+.pa{position: absolute;}
+.red{color: red;}
+.blue{color: blue;}
+.orange{color:#f1a93f;}
+.black{color: #000;}
+.white{color: #fff;}
+.grey{color: #6e6e6e;}
+
+/*a 链接*/
+a{
+	text-decoration:none;
+	color:#002030;
+}
+a:hover {
+color: #cc020d ;
+}
+/*段落缩进*/
+.t_index{text-indent:2em; line-height:25px;}
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.block{ display:block;}
+/*隐藏*/
+.yincang{display:none;}
+
+/*按钮*/
+input[type="button"] { cursor:pointer;
+	text-align: center; vertical-align:middle;
+	background-color:#007877;
+	border:solid 2px #003b3b; margin:8px;
+	color:#ffffff; font-size:24px;font-family: "微软雅黑";
+	 height:40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    -ms-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+
+}
+
+input[type="button"].buttonNone{background-color:#797878;border:solid 2px #2b2a2a;}
+input[type="button"].buttonBig{height:66px; font-size:30px; width:100%; margin:0px;}
+input[type="button"].buttonMid{height:66px; font-size:30px; width:100%; margin:20px 0px; }
+input[type="button"].search_button{height:68px; font-size:30px; width:100%; margin:0px;background-color:transparent;border:none;color:#999999;}
+
+
+
+/*文本框*/
+input[type="text"] { 
+	text-align: left; vertical-align:middle; background:none;
+	border:0;  margin:0px;
+	color:#999999; font-size:30px;font-family: "微软雅黑";
+	 height:68px; width:99%; line-height:66px;
+}
+textarea {  vertical-align:top; 	border:0;  margin:0px;
+	text-align: left; background:none; height:248px;line-height:48px; 
+	color:#999999; font-size:30px;font-family: "微软雅黑";width:99%; overflow-y:hidden;
+}
+    
+select { 
+	text-align: left; vertical-align:middle; background:none;
+	border:0;  margin:0px;
+	color:#999999; font-size:30px;font-family: "微软雅黑";
+	 height:68px; width:99%; line-height:66px;
+}
+    
+   input[type="radio"]
+
+    {
+
+
+    }
+
+   
+
+    input[type="checkbox"]
+
+    {
+
+    }

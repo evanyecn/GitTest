@@ -1,0 +1,7 @@
+首页新增可点连接：在线咨询：List_zxzx.html》》我要提问：disp_zxzx_wytw.html
+                                              我的问题：List_zxzx_wdtw.html》》disp_zxzx_wdtw.html
+                  满意度调查：disp_myddc.html
+                  科室列表（点自助挂号）：List_kslb.html》》科室介绍：List_ksjs.html》》挂号详情：disp_ghxq.html
+
+
+备注：其中早上发过来的“专家查询页面List_zjcx.html”做了修改，中间加了个查询的部分。
