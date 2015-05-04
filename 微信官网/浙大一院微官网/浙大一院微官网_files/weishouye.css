@@ -1,0 +1,145 @@
+body{
+	font-family: "微软雅黑";
+}
+.panel-body{
+	padding: 10px;
+	padding-top: 0px;
+}
+.panel{
+	margin-bottom: 5px;
+}
+.weixingwnr{
+	overflow: hidden;
+	text-align: center;
+}
+.weixingwtm,.weixingwtm1,.weixingwtm2{
+	width: 25%;
+	height: 90px;
+	font-size: 12px;
+	background: url("bg/weixin-xxbg.png");
+	border: none;
+	text-align: center;
+	display: inline-block;
+	
+}
+.weixingwtm{
+	float: left;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: 20px;
+	margin-right: 2px;
+}
+.weixingwtm1{
+	margin: 8px auto;
+}
+.weixingwtm2{
+	float: right;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-right: 20px;
+}
+/* .weixingwtm1{
+	float: right;
+	margin-right: 0px;	width: 167px;
+	height: 170px;
+} */
+.wxgwnr{
+	width:100%;
+	color: white;
+}
+.wxgwnrleft{
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	text-align: center;
+}
+.zyyynr{
+	height: 40px;
+	margin-top: 12px;
+	margin-bottom: 8px;
+}
+.list-group-item{
+	text-align: center;
+	color: #fff;
+	background-color: #428bca;
+	border-color: #428bca;
+}
+.wgwbg{
+	border: #428bca solid 1px;
+}
+.weixinbg{
+	background:url("bg/weixin-bg.jpg") no-repeat center top #fff;
+	text-align: center;
+	background-size:100% 100%;
+}
+.bg{
+	display: none;
+}
+.body .bg_black{
+	background:url("bg/weixin-bg.jpg") no-repeat center top #fff;background-size:100% 100%;
+}
+
+#mcover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 20000;
+}
+#mcover img {
+    position: fixed;
+    right: 18px;
+    top: 5px;
+    width: 260px!important;
+    height: 180px!important;
+    z-index: 20001;
+}
+#mess_share {
+    margin: 0px 0;
+    display: block;
+}
+#share_1 {
+    float: left;
+    width: 49%;
+    display: block;
+}
+#share_2 {
+    float: right;
+    width: 49%;
+    display: block;
+}
+.clr {
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+.button1 {
+	float:right;
+    font-size: 16px;
+    padding: 8px 0;
+    color: #fff;
+    text-shadow: 0.5px 0.5px 1px #fff;
+    text-align: center;
+    border-radius: 3px;
+    width: 100%;
+}
+.button2 {
+	float:left;
+    font-size: 16px;
+    padding: 8px 0;
+    color: #fff;
+    text-shadow: 0.5px 0.5px 1px #fff;
+    text-align: center;
+    border-radius: 3px;
+    width: 100%;
+}
+#mess_share img {
+    width: 22px!important;
+    height: 22px!important;
+    vertical-align: top;
+    border: 0;
+}
