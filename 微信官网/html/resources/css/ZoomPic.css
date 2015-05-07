@@ -58,7 +58,7 @@ a:active{color:#1d7400;}
 .body .section_body .list li div .tbox{ display:block; width:100%; height:100%; padding:25px 10px;; color:#fff; }
 .body .section_body .list li div .tbox .title{ width:100%;  text-align:center; display:block; line-height:20px;}
 .body .section_body .list li div .tbox .icon{ display:block; margin:5px auto;}
-.body header{height:180px; padding:20px 15px 0;}
+.body header{height:180px; padding:20px 0 0;}
 .body .section_body .nav{ width:60px; position:absolute; top:0; bottom:0; right:0px; background: #352f58; z-index:3000; display:none; }
 .body .section_body .showlist{position:absolute; top:0; right:0; z-index:3000; width:50px; height:40px; border-radius:30px 0px 0px 30px; background:#4a436b; margin-top:5px;}
 .body .section_body .showlist .icon{ background:url(../images/v84_nav.png) no-repeat; background-position:0 -150px; background-size:45px auto; width:35px; height:40px; float:right; margin-right:7px; }

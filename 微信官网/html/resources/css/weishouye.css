@@ -8,6 +8,10 @@ body{
 .body header {
 	padding-top: 0;
 }
+#scroll li {box-shadow:3px 3px 12px #fffcb5;}
+.slider{display:none;}/*用于获取更加体验*/
+.focus span{width:10px;height:10px;margin-right:10px;border-radius:50%;background:#0384dd;font-size:0}
+.focus span.current{background:#fff}
 .panel-body{
 	padding: 10px 0;
 	overflow: hidden;
