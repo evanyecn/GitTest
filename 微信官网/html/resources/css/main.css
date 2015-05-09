@@ -25,6 +25,9 @@ a{color:#575757;text-decoration:none;}
 .fb{ font-weight:bold;}      .f12{ font-size:12px;}        h3{ font-weight:normal;}      .listop{ padding-top:15px;}
 .mr10{ margin-right:10px;}   .mr15{ margin-right:15px;}    .mL10{ margin-left:10px;}     .mL15{ margin-left:15px;}
 .mt10{ margin-top:10px;}     .mt15{ margin-top:15px;}      .mb10{ margin-bottom:10px;}   .mb15{ margin-bottom:15px;}
+.pdr10 {padding-right: 10px;}
+.block {display: block;}
+.blue {color: #03558d; text-decoration: underline;}
 *{-webkit-box-sizing: border-box; margin:0px; padding:0px;}
 .wrap {padding-bottom: 40px; /*max-width: 640px; margin: 0 auto;*/}
 .header {
@@ -75,6 +78,13 @@ a{color:#575757;text-decoration:none;}
 .list-icon a.list-link3 {background-position: 20px -148px;}
 .list-icon a.list-link4 {background-position: 20px -228px;}
 .list-icon a.list-link5 {background-position: 20px -308px;}
+.list-icon a.list-link6 {background-position: 20px -468px;}
+.list-icon a.list-link7 {background-position: 20px -548px;}
+.list-icon a.list-link8 {background-position: 20px -628px;}
+.list-icon a.list-link9 {background-position: 20px -708px;}
+.list-icon a.list-link10 {background-position: 20px -788px;}
+.list-icon a.list-link11 {background-position: 20px -868px;}
+.list-icon a.list-link12 {background-position: 20px -948px;}
 
 .list-news li {
 	background-image: url(../imgs/bg/arrow-blue.png);
@@ -128,6 +138,10 @@ a{color:#575757;text-decoration:none;}
 	color: #03558d;
 	font-size: 16px;
 }
+.search-box label,.search-box .label {
+	float: left;
+	margin: 0 20px 10px 0;
+}
 .article {
 	color: #666;
 }
@@ -149,6 +163,136 @@ a{color:#575757;text-decoration:none;}
 	margin-bottom: 10px;
 }
 
+.table {
+	margin: 10px 0;	
+}
+.border-top {
+	border-top: 1px dashed #89b1cd;
+	padding-top: 10px;
+}
+.table table {
+	width: 100%;
+}
+.table th,.table td {
+	text-align: center;
+	border:1px solid #89b1cd;
+	padding: 5px;
+	font-size: 14px;
+	line-height: 26px;
+}
+.table th {background: #f2f7ff;}
+.reservation,.reservation-disabled {
+	border:1px solid #89b1cd;
+	background: #bfe3fb;
+	border-radius: 3px;
+	color: #03558d;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0 10px;
+	min-width: 30px;
+	height: 26px;
+	line-height: 26px;
+	display: inline-block;
+	text-align: center;
+	max-width: 640px;
+}
+.reservation-disabled {
+	background: #eee;
+	color: #868686;
+	border-color: #aaa;
+}
+.big-btn {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	background: #6baedb;
+	color: #fff;
+	margin: 0 10px;
+}
+.question {
+	padding: 0 10px;
+}
+.question .big-btn {
+	width: 48%;
+	margin: 0;
+}
+.info li {
+	border-bottom: 1px dashed #89b1cd;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.info table {
+	width: 100%;
+}
+.info img {
+	width: 100px;
+}
+.info td {
+	vertical-align: top;
+}
+.info-header {
+	padding-right: 10px;
+}
+.info p {
+	min-height: 130px;
+}
+.more-info {display: none;}
+.reservation-info {
+	padding:10px 0 0;
+	text-align: center;
+	font-size: 16px;
+	color: #03558d;
+	font-weight: bold;
+}
+.reservation-info span {
+	display: inline-block;
+	padding: 0 5px;
+}
+.list-imgs li {
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+.list-imgs a {
+	display: block;
+	border: 1px solid #89b1cd;
+	margin: 15px 10px 0;
+	padding: 10px 0;
+	background: #f2f7ff;
+	color: #03558d;
+	font-weight: bold;
+}
+.list-imgs img {
+	display: block;
+	margin: 0 auto 10px;
+	width: 80%;
+	max-width: 300px;
+}
+.list-question li {
+	border-bottom:1px solid #b4b4b4;
+	padding: 10px;
+}
+.list-question span {
+	color: #03558d;
+	font-weight: bold;
+}
+.list-question p {
+	padding: 5px 10px;
+}
+.answer-txt {
+	background: #f2f7ff;	
+}
+.ask-question {border:none;}
+.ask-question .search-txt {
+	width: 99%;
+	margin-bottom: 10px;
+}
+.notes {
+	clear: both;
+	color: #dc5353;
+}
+
 footer {
 	position: fixed;
 	width: 100%;
@@ -160,3 +304,4 @@ footer {
 	color: #fff;
 	font-size: 14px;
 }
+.noborder {border:none;}

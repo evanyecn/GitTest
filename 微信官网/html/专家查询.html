@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+	<meta content="no-cache" http-equiv="pragma">
+	<meta content="0" http-equiv="expires">
+	<meta content="telephone=no, address=no" name="format-detection">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<title>鄞州区第三医院微官网</title>	
+	<link rel="stylesheet" type="text/css" href="resources/css/main.css" media="all">
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+			<a href="javascript:history.go(-1);" class="go-back">返回</a>		
+			<a href="index.html" class="to-home"></a>
+			<h1>专家查询</h1>
+		</header>
+		<div class="search-box clearfix mb10">
+			<input type="text" placeholder="请输入专家名称" class="search-txt" /> <input type="button" class="search-btn" value="搜索" />
+		</div>
+		<ul class="info">
+			<li>
+				<table>
+					<tr>
+						<td class="info-header">
+							<img src="resources/imgs/demo-3.png" />
+							科室：妇产科<br />
+							姓名：林大大<br />
+							职称：主任医师<br />
+						</td>
+						<td>
+							<p>
+								鄞州二院妇产科专家。自1991年起一直从事妇产科专业临床工作，擅长妇科宫腔镜、腹腔镜手术及经阴道手术系列，在妇科肿瘤、不孕症的治疗上具有丰富的临床经验。目前从鄞州二院委派到我院，开展妇产科住院临床工作，并承担妇产科急救和临床教学、科研业务。
+							</p>
+							<div class="clearfix mt10">
+								<span class="fl">今日：全天</span>
+								<a href="javascript:void(0);" class="fr reservation mL10 more-btn">更多</a>
+								<a href="挂号详细.html" class="fr reservation">预约挂号</a>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<div class="table more-info">
+					<table>
+						<thead>
+							<tr>
+			                    <th>预约时间</th>
+			                    <th>剩余号源</th>
+			                    <th>费用</th>
+			                    <th>操作</th>
+			                </tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<span class="block">2015-03-23</span><span class="block">星期一</span><span class="block">上午</span>
+		                        </td>
+								<td>10</td>
+								<td>15</td>
+								<td><a href="#" class="reservation">预约挂号</a></td>
+							</tr>
+							<tr>
+								<td>
+									<span class="block">2015-03-23</span><span class="block">星期一</span><span class="block">上午</span>
+		                        </td>
+								<td>10</td>
+								<td>15</td>
+								<td><a href="#" class="reservation-disabled">预约挂号</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</li>
+			<li>
+				<table>
+					<tr>
+						<td class="info-header">
+							<img src="resources/imgs/demo-3.png" />
+							科室：妇产科<br />
+							姓名：林大大<br />
+							职称：主任医师<br />
+						</td>
+						<td>
+							<p>
+								鄞州二院妇产科专家。自1991年起一直从事妇产科专业临床工作，擅长妇科宫腔镜、腹腔镜手术及经阴道手术系列，在妇科肿瘤、不孕症的治疗上具有丰富的临床经验。目前从鄞州二院委派到我院，开展妇产科住院临床工作，并承担妇产科急救和临床教学、科研业务。
+							</p>
+							<div class="clearfix mt10">
+								<span class="fl">今日：全天</span>
+								<a href="javascript:void(0);" class="fr reservation mL10 more-btn">更多</a>
+								<a href="#" class="fr reservation">预约挂号</a>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<div class="table more-info">
+					<table>
+						<thead>
+							<tr>
+			                    <th>预约时间</th>
+			                    <th>剩余号源</th>
+			                    <th>费用</th>
+			                    <th>操作</th>
+			                </tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<span class="block">2015-03-23</span><span class="block">星期一</span><span class="block">上午</span>
+		                        </td>
+								<td>10</td>
+								<td>15</td>
+								<td><a href="#" class="reservation">预约挂号</a></td>
+							</tr>
+							<tr>
+								<td>
+									<span class="block">2015-03-23</span><span class="block">星期一</span><span class="block">上午</span>
+		                        </td>
+								<td>10</td>
+								<td>15</td>
+								<td><a href="#" class="reservation-disabled">预约挂号</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</li>
+		</ul>
+		
+		<footer>© 2015 鄞州区第三医院</footer>
+	</div>
+</body>
+<script type="text/javascript" src="resources/js/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var moreBtns = $('a.more-btn'),
+			moreInfo = $('div.more-info'),
+			i = 0;
+		moreBtns.each(function() {
+			$(this).attr('name', i);
+			i++;
+		});
+		moreBtns.on('click', function() {
+			var i = Number($(this).attr('name'));
+			moreInfo.eq(i).toggleClass('more-info');
+		});
+	});
+</script>
+</html>
