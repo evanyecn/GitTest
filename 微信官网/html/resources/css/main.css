@@ -140,7 +140,7 @@ a{color:#575757;text-decoration:none;}
 }
 .search-box label,.search-box .label {
 	float: left;
-	margin: 0 20px 10px 0;
+	margin: 0 10px 10px 0;
 }
 .article {
 	color: #666;
@@ -203,12 +203,13 @@ a{color:#575757;text-decoration:none;}
 }
 .big-btn {
 	display: block;
+	width: 95%;
 	height: 40px;
 	line-height: 40px;
 	font-size: 16px;
 	background: #6baedb;
 	color: #fff;
-	margin: 0 10px;
+	margin: 0 auto;
 }
 .question {
 	padding: 0 10px;
@@ -288,9 +289,28 @@ a{color:#575757;text-decoration:none;}
 	width: 99%;
 	margin-bottom: 10px;
 }
+.col99 {
+	width: 99%;
+	float: left;
+}
 .notes {
 	clear: both;
 	color: #dc5353;
+}
+.header-tab {
+	background-color:#bfe3fb;
+	text-align: center;
+	color: #89b1cd;
+	font-size: 16px;
+}
+.header-tab a {
+	display: inline-block;
+	width: 48%;
+	line-height: 40px;
+}
+.header-tab a.cur {
+	color: #03558d;
+	font-weight: bold;
 }
 
 footer {
