@@ -289,9 +289,58 @@ a{color:#575757;text-decoration:none;}
 	width: 99%;
 	margin-bottom: 10px;
 }
-.col99 {
+.col99,.form-item {
 	width: 99%;
 	float: left;
+}
+.form-item {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+.form-input {
+	display: block;
+	border-left: 1px solid #ddd;
+	margin-left: 90px;
+	min-height: 35px;
+	background: url(../imgs/text_bg.png) top left repeat-x;
+	overflow: hidden;
+}
+.form-title {
+	float: left;
+	width: 80px;
+	text-align: right;
+	line-height: 35px;
+	color: #03558d;
+	font-size: 14px;
+}
+.form-input input[type=text],.form-input select {
+	border: none;
+	background: none;
+	width: 90%;
+	height: 35px;
+	padding-left: 10px;
+}
+.form-input select {
+	width: 200%;
+	color: #666;
+}
+.form-input label {
+	display: inline-block;
+	margin: 10px 0 0 10px;
+}
+.radio-inputs label {
+	width: 30%;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border: 1px dashed #999999;
+	color: #999;
+}
+.radio-inputs label.selected {
+	border: 1px solid #6baedb;
+	color: #03558d;
+	background: url(../imgs/bg/selected.png) right bottom no-repeat;
 }
 .notes {
 	clear: both;

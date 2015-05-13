@@ -23,80 +23,92 @@
 			<span>为保证我们更好的服务，请如实输入信息。</span>
 		</div>
 		<div class="search-box clearfix ask-question">
-			<div class="col99">
-				<span class="label">就诊科室：</span>
-				<select>
-	                <option value="1">请选择</option>
-	                <option value="2">妇产科</option>
-	                <option value="3">骨伤科</option>
-	                <option value="4">小儿科</option>
-	            </select>
-            </div>
-			<input type="text" placeholder="请输入就诊时间" class="search-txt">
-			<div class="col99">
-				<span class="label">就诊类型：</span>
-				<select>
-                    <option value="1">请选择</option>
-                    <option value="2">现场挂号</option>
-                    <option value="3">电话预约</option>
-                    <option value="4">网络预约</option>
-                    <option value="5">微信预约</option>
-                    <option value="6">医生加号</option>
-                    <option value="7">其他</option>
-                </select>
-            </div>
-			
-			<input type="text" placeholder="请输入您的姓名" class="search-txt">
-			<input type="text" placeholder="请输入证件类型" class="search-txt">
-			<input type="text" placeholder="请输入证件号码" class="search-txt">
-			<input type="text" placeholder="请输入手机号码" class="search-txt">
-			<div class="col99">
-				<span class="label">您对就诊质量的评价:</span>
-				<label>
-					<input type="radio" name="1" /> 一般
-				</label>
-				<label>
-					<input type="radio" name="1" /> 满意
-				</label>
-				<label>
-					<input type="radio" name="1" /> 非常满意
-				</label>
+			<div class="form-item">
+				<span class="form-title">就诊科室:</span>
+				<span class="form-input">
+					<select>
+		                <option value="1">请选择</option>
+		                <option value="2">妇产科</option>
+		                <option value="3">骨伤科</option>
+		                <option value="4">小儿科</option>
+		            </select>
+				</span>
 			</div>
-			<div class="col99">
-				<span class="label">您对就诊环境的评价:</span>
-				<label>
-					<input type="radio" name="2" /> 一般
-				</label>
-				<label>
-					<input type="radio" name="2" /> 满意
-				</label>
-				<label>
-					<input type="radio" name="2" /> 非常满意
-				</label>
+			<div class="form-item">
+				<span class="form-title">就诊时间:</span>
+				<span class="form-input">
+					<input type="text" placeholder="请输入">
+				</span>
 			</div>
-			<div class="col99">
-				<span class="label">您对服务态度的评价:</span>
-				<label>
-					<input type="radio" name="3" /> 一般
-				</label>
-				<label>
-					<input type="radio" name="3" /> 满意
-				</label>
-				<label>
-					<input type="radio" name="3" /> 非常满意
-				</label>
+			<div class="form-item">
+				<span class="form-title">就诊类型:</span>
+				<span class="form-input">
+					<select>
+	                    <option value="1">请选择</option>
+	                    <option value="2">现场挂号</option>
+	                    <option value="3">电话预约</option>
+	                    <option value="4">网络预约</option>
+	                    <option value="5">微信预约</option>
+	                    <option value="6">医生加号</option>
+	                    <option value="7">其他</option>
+	                </select>
+				</span>
 			</div>
-			<div class="col99">
-				<span class="label">您对我们总体服务的评价:</span>
-				<label>
-					<input type="radio" name="4" /> 一般
-				</label>
-				<label>
-					<input type="radio" name="4" /> 满意
-				</label>
-				<label>
-					<input type="radio" name="4" /> 非常满意
-				</label>
+			<div class="form-item">
+				<span class="form-title">您的姓名:</span>
+				<span class="form-input">
+					<input type="text" placeholder="请输入" />
+				</span>
+			</div>
+			<div class="form-item">
+				<span class="form-title">证件类型:</span>
+				<span class="form-input">
+					<select>
+                        <option value="1">请选择</option>
+                        <option value="2">身份证</option>
+                        <option value="3">护照</option>
+                        <option value="4">军官证</option>
+                        <option value="5">港澳通行证</option>
+                        <option value="6">台胞证</option>
+                        <option value="7">户口本</option>
+                    </select>
+				</span>
+			</div>
+			<div class="form-item">
+				<span class="form-title">证件号码:</span>
+				<span class="form-input">
+					<input type="text" placeholder="请输入" />
+				</span>
+			</div>
+			<div class="form-item">
+				<span class="form-title">手机号码:</span>
+				<span class="form-input">
+					<input type="text" placeholder="请输入" />
+				</span>
+			</div>		
+			<span class="label">请选择您对就诊质量的评价:</span>
+			<div class="col99 radio-inputs">
+				<label class="selected">一般</label>
+				<label>满意</label>
+				<label>非常满意</label>
+			</div>
+			<span class="label">您对就诊环境的评价:</span>
+			<div class="col99 radio-inputs">
+				<label>一般</label>
+				<label class="selected">满意</label>
+				<label>非常满意</label>
+			</div>
+			<span class="label">您对服务态度的评价:</span>
+			<div class="col99 radio-inputs">
+				<label>一般</label>
+				<label>满意</label>
+				<label class="selected">非常满意</label>
+			</div>
+			<span class="label">您对我们总体服务的评价:</span>
+			<div class="col99 radio-inputs">
+				<label class="selected">一般</label>
+				<label>满意</label>
+				<label>非常满意</label>
 			</div>
 			<span class="label">意见反馈:</span>
 			<textarea class="search-txt" style="height:100px;" placeholder="请输入您的意见"></textarea>
