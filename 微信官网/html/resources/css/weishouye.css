@@ -1,3 +1,4 @@
+body, html {height: 100%;}
 body{
 	font-family: "微软雅黑";
 }
@@ -13,7 +14,7 @@ body{
 .focus span{width:10px;height:10px;margin-right:10px;border-radius:50%;background:#0384dd;font-size:0}
 .focus span.current{background:#fff}
 .panel-body{
-	padding: 10px 0;
+	padding: 8px 0;
 	overflow: hidden;
 }
 .panel-body li {
@@ -24,8 +25,8 @@ body{
 .panel-body a {
 	font-size: 12px;
 	display: inline-block;
-	width: 90px;
-	height: 90px;
+	width: 70px;
+	height: 70px;
 	color: #fff;
 	text-align: center;
 	background: url("../imgs/bg/weixin-xxbg.png") center center no-repeat;
@@ -34,8 +35,8 @@ body{
 .panel-body img {
 	display: block;
 	margin: 0 auto;
-	width: 60px;
-	height: 60px;
+	width: 40px;
+	height: 40px;
 	margin-top: 3px;
 }
 .panel{

@@ -48,7 +48,7 @@ a:active{color:#1d7400;}
 .icon.mark{ background-position:-90px 0px;}
 .icon.cup { background-position:-120px 0px;}
 .icon.download{ background-position:-150px 0px;}
-.body{margin:auto;min-height:100%;position:relative;display:block; font-size:12px; min-width:320px; padding-bottom:40px; }
+.body{margin:auto;min-height:100%;position:relative;display:block; font-size:12px; min-width:320px; padding-bottom:10px; }
 .body .bg{ position:absolute; z-index:-1;  top:0; left:0; right:0; bottom:0; opacity:0.8; }
 .body  .bg_black{position:absolute; z-index:-2;  top:0; left:0; right:0; bottom:0;  background:#000;}
 .body .section_body .list{ padding: 0px 20px 20px 20px ;}

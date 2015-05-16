@@ -68,23 +68,23 @@ a{color:#575757;text-decoration:none;}
 .list-icon a,.sections-icon a {
 	font-size: 18px;
 	display: block;
-	height: 80px;
-	line-height: 80px;
+	height: 70px;
+	line-height: 70px;
 	padding-left: 95px;
 	color: #767676;
-	background: url(../imgs/bg/icons.png) 20px 12px no-repeat;
+	background: url(../imgs/bg/icons.png) 20px 7px no-repeat;
 }
-.list-icon a.list-link2 {background-position: 20px -68px;}
-.list-icon a.list-link3 {background-position: 20px -148px;}
-.list-icon a.list-link4 {background-position: 20px -228px;}
-.list-icon a.list-link5 {background-position: 20px -308px;}
-.list-icon a.list-link6 {background-position: 20px -468px;}
-.list-icon a.list-link7 {background-position: 20px -548px;}
-.list-icon a.list-link8 {background-position: 20px -628px;}
-.list-icon a.list-link9 {background-position: 20px -708px;}
-.list-icon a.list-link10 {background-position: 20px -788px;}
-.list-icon a.list-link11 {background-position: 20px -868px;}
-.list-icon a.list-link12 {background-position: 20px -948px;}
+.list-icon a.list-link2 {background-position: 20px -73px;}
+.list-icon a.list-link3 {background-position: 20px -153px;}
+.list-icon a.list-link4 {background-position: 20px -233px;}
+.list-icon a.list-link5 {background-position: 20px -313px;}
+.list-icon a.list-link6 {background-position: 20px -473px;}
+.list-icon a.list-link7 {background-position: 20px -553px;}
+.list-icon a.list-link8 {background-position: 20px -633px;}
+.list-icon a.list-link9 {background-position: 20px -713px;}
+.list-icon a.list-link10 {background-position: 20px -793px;}
+.list-icon a.list-link11 {background-position: 20px -873px;}
+.list-icon a.list-link12 {background-position: 20px -953px;}
 
 .list-news li {
 	background-image: url(../imgs/bg/arrow-blue.png);
@@ -110,7 +110,11 @@ a{color:#575757;text-decoration:none;}
 	color: #9e9e9e;
 	font-size: 14px;
 }
-
+.section-intro i {
+	display: block;
+	margin: 0 15% 0 0;
+	font-size: 12px;
+}
 .sections-icon a {
 	height: 60px;
 	line-height: 60px;
@@ -361,6 +365,20 @@ a{color:#575757;text-decoration:none;}
 .header-tab a.cur {
 	color: #03558d;
 	font-weight: bold;
+}
+.exporter a {
+	width: auto;
+	line-height: 24px;
+	margin: 3px 0;
+}
+.exporter a.cur {
+	border:1px solid #89b1cd;
+	background: #0568ac;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 14px;
+	padding: 0 8px;
+	text-align: center;
 }
 .community {
 	background-color: #ebebeb;
