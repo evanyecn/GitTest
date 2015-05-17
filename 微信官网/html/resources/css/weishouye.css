@@ -10,6 +10,10 @@ body{
 	padding-top: 0;
 }
 #scroll li {box-shadow:3px 3px 12px #fffcb5;}
+#scroll p {position: absolute; bottom: 0; width: 100%; line-height: 30px; background: rgba(0,0,0,0.5); color: #fff;}
+#scroll p span {display: block; padding: 0 20px;}
+#scroll li a {display: block; width: 100%; height: 100%;}
+#scroll img {vertical-align: middle;}
 .slider{display:none;}/*用于获取更加体验*/
 .focus span{width:10px;height:10px;margin-right:10px;border-radius:50%;background:#0384dd;font-size:0}
 .focus span.current{background:#fff}
@@ -25,19 +29,19 @@ body{
 .panel-body a {
 	font-size: 12px;
 	display: inline-block;
-	width: 70px;
-	height: 70px;
+	width: 66px;
+	height: 66px;
 	color: #fff;
 	text-align: center;
 	background: url("../imgs/bg/weixin-xxbg.png") center center no-repeat;
-	margin-bottom: 10px;
+	margin-bottom: 8px;
 }
 .panel-body img {
 	display: block;
 	margin: 0 auto;
-	width: 40px;
-	height: 40px;
-	margin-top: 3px;
+	width: 36px;
+	height: 36px;
+	margin-top: 2px;
 }
 .panel{
 	margin-bottom: 5px;
@@ -114,6 +118,27 @@ body{
 	height: 100%;
 	background:url("../imgs/bg/weixin-bg.jpg") no-repeat center top #fff;
 	background-size:100% 100%;
+}
+.footer {
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	top: 0;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	overflow:hidden;
+	z-index: 99;
+}
+.footer .go-back {
+	margin: 4px 0 0 5px;
+	line-height:30px;
+	float: left;
+	background: url(../imgs/bg/goback.png) 0 center no-repeat;
+	color: #fff;
+	padding-left: 18px;
 }
 
 #mcover {

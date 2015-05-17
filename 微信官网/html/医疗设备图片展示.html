@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+	<meta content="no-cache" http-equiv="pragma">
+	<meta content="0" http-equiv="expires">
+	<meta content="telephone=no, address=no" name="format-detection">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<title>鄞州区第三医院微官网</title>	
+	<link rel="stylesheet" type="text/css" href="resources/css/ZoomPic.css" media="all">
+	<link rel="stylesheet" type="text/css" href="resources/css/weishouye.css">
+	<script type="text/javascript" src="resources/js/jquery.min.js"></script>
+	<script type="text/javascript" src="resources/js/mobileSlider-2.js"></script>
+	<!--
+	<script type="text/javascript" src="resources/js/ZoomPic.js"></script>
+	<script type="text/javascript" src="resources/js/rotate.js"></script>
+	<script type="text/javascript" src="resources/js/jquery.transform.js"></script>
+	<script type="text/javascript" src="resources/js/iscroll.js"></script>
+	-->
+</head>
+<body onselectstart="return true;" ondragstart="return false;">
+	<div id="scroll">
+		<ul>
+			<li>
+				<a href="医疗设备详细页.html"><img src="resources/imgs/weixinlunbo01.jpg"></a>
+				<p><span>医疗设备1</span></p>
+			</li>
+			<li>
+				<a href="医疗设备详细页.html"><img src="resources/imgs/weixinlunbo02.jpg"></a>
+				<p><span>医疗设备2</span></p>
+			</li>
+			<li>
+				<a href="医疗设备详细页.html"><img src="resources/imgs/weixinlunbo03.jpg"></a>
+				<p><span>医疗设备3</span></p>
+			</li>
+		</ul>
+	</div>
+	<div class="footer"><a href="javascript:history.go(-1);" class="go-back">返回</a></div>
+</body>
+<script type="text/javascript">
+$(function() {
+	var scroll = $("#scroll"),
+		w = scroll.parent().width(),
+		h = scroll.parent().height();
+	scroll.mobileSlider({width:w,height:h,autoMove:false});
+});
+	
+</script>
+</html>

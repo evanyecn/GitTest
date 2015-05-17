@@ -31,37 +31,16 @@
             });
             oLi.css({
                 float: 'left',
-                display: 'inline'
+                background: '#000',
+                position: 'relative'
+            });
+            $("a", oLi).css({
+                lineHeight: s.height+'px'
             });
             $("img", oLi).css({
-                width: s.width,
-                height: s.height
+                width: '100%',
+                maxHeight: '100%'
             });
-            //初始化焦点容器及按钮
-            _this.append('<div class="focus"><div></div></div>');
-            var oFocusContainer = $(".focus");
-            for (var i = 0; i < num; i++) {
-                $("div", oFocusContainer).append("<span></span>");
-            }
-            var oFocus = $("span", oFocusContainer);
-            oFocusContainer.css({
-                minHeight: $(this).find('span').height() * 2,
-                position: 'absolute',
-                bottom: 0,
-                background: 'rgba(0,0,0,0.5)'
-            })
-            $("span", oFocusContainer).css({
-                display: 'block',
-                float: 'left',
-                cursor: 'pointer'
-            })
-            $("div", oFocusContainer).width(oFocus.outerWidth(true) * num).css({
-                position: 'absolute',
-                right: 10,
-                top: '50%',
-                marginTop: -$(this).find('span').width() / 2
-            });
-            oFocus.first().addClass("current");
             //页面加载或发生改变
             $(window).bind('resize load', function(){
                 if (isMobile()) {
@@ -70,37 +49,19 @@
                 }
                 oLi.width(_this.width()).height(_this.height());//设定滚动单元宽高
                 oMover.width(num * oLi.width());
-                oFocusContainer.width(_this.width()).height(_this.height() * 0.15).css({
-                    zIndex: 2
-                });//设定焦点容器宽高样式
                 _this.fadeIn(300);
             });
-            //页面加载完毕BANNER自动滚动
             
-            s.autoMove && autoMove();
-            //PC机下焦点切换
-            if (!isMobile()) {
-                oFocus.hover(function(){
-                    iCurr = $(this).index() - 1;
-                    stopMove();
-                    doMove();
-                }, function(){
-                    autoMove();
-                })
-            }
+           
             //自动运动
             function autoMove(){
                 timer = setInterval(doMove, s.during);
-            }
-            //停止自动运动
-            function stopMove(){
-                clearInterval(timer);
             }
             //运动效果
             function doMove(){
                 iCurr = iCurr >= num - 1 ? 0 : iCurr + 1;
                 doAnimate(-moveWidth * iCurr);
-                oFocus.eq(iCurr).addClass("current").siblings().removeClass("current");
+                //oFocus.eq(iCurr).addClass("current").siblings().removeClass("current");
             }
             //绑定触摸事件
             function bindTochuEvent(){
@@ -168,7 +129,7 @@
                             doAnimate(-(num - 1) * moveWidth, autoMove);
                         }
                     }
-                    oFocus.eq(iCurr).addClass("current").siblings().removeClass("current");
+                    //oFocus.eq(iCurr).addClass("current").siblings().removeClass("current");
                 }
             }
             //移动设备基于屏幕宽度设置容器宽高
@@ -185,8 +146,8 @@
                 oMover.stop().animate({
                     left: iTarget
                 }, _this.speed , function(){
-                    if (fn) 
-                        fn();
+                    /*if (fn) 
+                        fn();*/
                 });
             }
             //判断是否是移动设备
