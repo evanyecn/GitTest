@@ -68,23 +68,23 @@ a{color:#575757;text-decoration:none;}
 .list-icon a,.sections-icon a {
 	font-size: 18px;
 	display: block;
-	height: 70px;
-	line-height: 70px;
+	height: 60px;
+	line-height: 60px;
 	padding-left: 95px;
 	color: #767676;
-	background: url(../imgs/bg/icons.png) 20px 7px no-repeat;
+	background: url(../imgs/bg/icons.png) 20px 2px no-repeat;
 }
-.list-icon a.list-link2 {background-position: 20px -73px;}
-.list-icon a.list-link3 {background-position: 20px -153px;}
-.list-icon a.list-link4 {background-position: 20px -233px;}
-.list-icon a.list-link5 {background-position: 20px -313px;}
-.list-icon a.list-link6 {background-position: 20px -473px;}
-.list-icon a.list-link7 {background-position: 20px -553px;}
-.list-icon a.list-link8 {background-position: 20px -633px;}
-.list-icon a.list-link9 {background-position: 20px -713px;}
-.list-icon a.list-link10 {background-position: 20px -793px;}
-.list-icon a.list-link11 {background-position: 20px -873px;}
-.list-icon a.list-link12 {background-position: 20px -953px;}
+.list-icon a.list-link2 {background-position: 20px -78px;}
+.list-icon a.list-link3 {background-position: 20px -158px;}
+.list-icon a.list-link4 {background-position: 20px -238px;}
+.list-icon a.list-link5 {background-position: 20px -318px;}
+.list-icon a.list-link6 {background-position: 20px -478px;}
+.list-icon a.list-link7 {background-position: 20px -558px;}
+.list-icon a.list-link8 {background-position: 20px -638px;}
+.list-icon a.list-link9 {background-position: 20px -718px;}
+.list-icon a.list-link10 {background-position: 20px -798px;}
+.list-icon a.list-link11 {background-position: 20px -878px;}
+.list-icon a.list-link12 {background-position: 20px -958px;}
 
 .list-news li {
 	background-image: url(../imgs/bg/arrow-blue.png);
@@ -148,6 +148,13 @@ a{color:#575757;text-decoration:none;}
 }
 .article {
 	color: #666;
+}
+.article-title 
+{
+    font-size:16px;
+    text-align:center;
+    color:#333;
+    padding:10px 0 5px;
 }
 .sub-title {
 	text-align: center;
@@ -488,5 +495,14 @@ footer {
 	text-align: center;
 	color: #fff;
 	font-size: 14px;
+	overflow:hidden;
+}
+footer .go-back {
+	margin: 4px 0 0 5px;
+	line-height:30px;
+	font-size: 14px;
+}
+footer .to-home {
+	margin: 3px 10px 0 0;
 }
 .noborder {border:none;}
