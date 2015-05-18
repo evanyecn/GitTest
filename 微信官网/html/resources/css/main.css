@@ -238,7 +238,7 @@ a{color:#575757;text-decoration:none;}
 	width: 100%;
 }
 .info img {
-	width: 100px;
+	width: 80px;
 }
 .info td {
 	vertical-align: top;
@@ -249,11 +249,14 @@ a{color:#575757;text-decoration:none;}
 .info p {
 	/*min-height: 130px;*/
 }
-.intro-txt {
-	font-size: 14px;
-	display: block;
-	font-weight: bold;
-	color: #4081ad;
+.info i {color: #4081ad;font-weight: bold;}
+.intro-txt,.intro-txt-block {
+	width: 50%;
+	float: left;
+	line-height: 20px;
+}
+.intro-txt-block {
+	width: 100%;
 }
 .more-info {display: none;}
 .reservation-info {
@@ -392,6 +395,11 @@ a{color:#575757;text-decoration:none;}
 	font-size: 14px;
 	padding: 0 8px;
 	text-align: center;
+}
+.expert {
+	padding: 5px 10px;
+	text-align: left;
+	font-weight: bold;
 }
 .community {
 	background-color: #ebebeb;
