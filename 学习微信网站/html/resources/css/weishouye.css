@@ -1,0 +1,79 @@
+*{ margin:0px; padding:0px;}
+li {list-style: none;}
+body, html {height: 100%;}
+body{
+	font: 1em/1.5 "微软雅黑",arial,sans-serif;;
+}
+a {text-decoration: none; color: #3b4e48;}
+.clearfix{}
+.clearfix:after{ display:table; line-height:0; content:""; clear:both;}
+.body{margin:auto;min-height:100%;position:relative;display:block; font-size:12px; min-width:320px; padding-bottom:18px; }
+.body header{height:180px; overflow: hidden;}
+#scroll li {box-shadow:3px 3px 12px #fffcb5;}
+#scroll p {position: absolute; bottom: 0; width: 100%; line-height: 30px; background: rgba(0,0,0,0.5); color: #fff;}
+#scroll p span {display: block; padding: 0 20px;}
+#scroll li a {display: block; width: 100%; height: 100%;}
+#scroll img {vertical-align: middle;}
+.focus span{width:12px;height:12px;margin-right:10px;border-radius:50%;background:#00ab71;font-size:0}
+.focus span.current{background:#fff}
+.tab-header {
+	padding-top: 3px;
+	height: 30px;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#e9e9e9));
+	overflow: hidden;
+	border-bottom: 2px solid #0ea974;
+}
+.tab-header li {
+	float: left;
+	line-height: 30px;
+	margin-right: 10px;
+	padding: 0 8px;
+}
+.tab-header li.cur {
+	background-color: #0eac76;
+	border-top-left-radius: 0.5em;
+	border-top-right-radius: 0.5em;
+	box-shadow: 2px 2px 5px #5f9b88;
+	color: #fff;
+	font-weight: bold;
+}
+.tab-body {min-height: 145px;}
+.tab-item {display: none;}
+.tab-item li {border-bottom: 1px solid #d8d8d8; padding-left: 8px;}
+.tab-item li a {
+	display: block;
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+}
+.tab-item li.odd {background-color:#f9f9f9;}
+.imgs li {
+	float: left;
+	width: 30%;
+	margin: 5px 1.5%;
+}
+.imgs img {
+	width: 100%;
+	border: 1px solid #647f7a;
+	padding: 1px;
+}
+footer {width:100%; height: 48px; position: fixed; background-color: #61706b; bottom: 0;}
+footer a {
+	float: left;
+	width: 25%;
+	height: 100%;
+	color: #fff;
+	text-align: center;
+}
+footer i {
+	display: block;
+	width: 30px;
+	height: 30px;
+	overflow: hidden;
+	margin: 0 auto;
+	background-image: url(../imgs/home-icon.png);
+	background-size: 100% auto;
+}
+.i2 {background-position: 0 -30px;}
+.i3 {background-position: 0 -60px;}
+.i4 {background-position: 0 -90px;}

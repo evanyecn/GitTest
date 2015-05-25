@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+	<meta content="no-cache" http-equiv="pragma">
+	<meta content="0" http-equiv="expires">
+	<meta content="telephone=no, address=no" name="format-detection">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<title>学校微官网</title>	
+	<link rel="stylesheet" type="text/css" href="resources/css/weishouye.css" />
+	<script type="text/javascript" src="resources/js/jquery.min.js"></script>
+	<script type="text/javascript" src="resources/js/mobileSlider.js"></script>
+</head>
+<body onselectstart="return true;" ondragstart="return false;">
+	<div class="body" id="body">
+		<header>
+			<div id="scroll">
+				<ul>
+					<li><a href="http://www.163.com"><img src="resources/imgs/weixinlunbo01.jpg"></a></li>
+					<li><a href="http://www.163.com"><img src="resources/imgs/weixinlunbo02.jpg"></a></li>
+					<li><a href="http://www.163.com"><img src="resources/imgs/weixinlunbo03.jpg"></a></li>
+				</ul>
+			</div>
+		</header>
+		<div class="tab-wrap" id="tab">
+			<ul class="tab-header">
+				<li>我的消息</li>
+				<li>通知公告</li>
+				<li>学校新闻</li>
+			</ul>
+			<div class="tab-body">
+				<div class="tab-item">
+					<ul>
+						<li><a href="#">我的消息通知列表内容我的消息通知列表内</a></li>
+						<li class="odd"><a href="#">我的消息通知列表内容我的消息通知列表内</a></li>
+						<li><a href="#">我的消息通知列表内容我的消息通知列表内</a></li>
+						<li class="odd"><a href="#">我的消息通知列表内容我的消息通知列表内</a></li>
+						<li><a href="#">我的消息通知列表内容我的消息通知列表内</a></li>
+					</ul>
+				</div>
+				<div class="tab-item">
+					<ul>
+						<li><a href="#">我的通知公告</a></li>
+						<li class="odd"><a href="#">我的通知公告</a></li>
+						<li><a href="#">我的通知公告</a></li>
+						<li class="odd"><a href="#">我的消息通知列表内容我的消息通知列表内</a></li>
+						<li><a href="#">我的消息通知列表内容我的消息通知列表内</a></li>
+					</ul>
+				</div>
+				<div class="tab-item">
+					<ul class="clearifx">
+						<li><a href="#">学校新闻</a></li>
+						<li class="odd"><a href="#">学校新闻</a></li>
+						<li><a href="#">学校新闻</a></li>
+						<li class="odd"><a href="#">学校新闻</a></li>
+						<li><a href="#">学校新闻</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="imgs">
+			<ul class="clearfix">
+				<li><a href="#"><img src="resources/imgs/img-01.jpg" /></a></li>
+				<li><a href="#"><img src="resources/imgs/img-02.jpg" /></a></li>
+				<li><a href="#"><img src="resources/imgs/img-03.jpg" /></a></li>
+			</ul>
+		</div>
+		<footer>
+			<a href="#"><i></i>我的主页</a>
+			<a href="#"><i class="i2"></i>我的消息</a>
+			<a href="#"><i class="i3"></i>家庭作业</a>
+			<a href="#"><i class="i4"></i>成长相册</a>
+		</footer>
+	</div>
+</body>
+<script type="text/javascript">
+$(function() {
+	var scroll = $("#scroll"),
+		w = scroll.parent().width(),
+		h = scroll.parent().height();
+	scroll.mobileSlider({width:w,height:h,during:2000});
+
+	var tab = $('#tab'),
+		tab_head = tab.find('ul.tab-header').find('li'),
+		tab_items = tab.find('div.tab-item');
+
+	tab_head.eq(0).addClass('cur');
+	tab_items.eq(0).show();
+	var cur_head = tab_head.eq(0),
+		cur_item = tab_items.eq(0);
+
+	tab_head.click(function() {
+		var i = $(this).index();
+		cur_head.removeClass('cur');
+		cur_item.hide();
+		cur_head = tab_head.eq(i).addClass('cur');
+		cur_item = tab_items.eq(i).show();
+	});
+});
+	
+</script>
+</html>
