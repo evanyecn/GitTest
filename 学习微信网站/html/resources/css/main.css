@@ -10,7 +10,7 @@ h1,h2,h3,h4,h5,h6{font-size:100%; }
 ul,ol,li,dl{list-style-type:none;}
 em,i,dfn,cite,strong,small{font-style:normal;} 
 img{border:0;}
-button,input,select,option{vertical-align:middle;font:12px/18px "微软雅黑",arial,sans-serif;}
+textarea,button,input,select,option{vertical-align:middle;font:0.6em/1.5 "微软雅黑",arial,sans-serif;}
 table{border-collapse:collapse;border-spacing:0}
 textarea{resize:none}
 
@@ -123,6 +123,54 @@ a{color:#575757;text-decoration:none;}
 	line-height: 28px;
 }
 .main-list li.odd {background-color:#f9f9f9;}
+.homework-list li {
+	border-bottom: 1px solid #d8d8d8;
+	padding:10px;
+}
+.homework-title {
+	overflow: hidden;
+	padding-left: 32px;
+	line-height: 28px;
+	background: url(../imgs/homework.png) no-repeat;
+	color: #666;
+}
+.homework-title span {
+	float: left;
+	font-size: 1.3em;
+}
+.homework-title a {
+	float: right;
+	color: #666;
+	background: url(../imgs/homework.png) 30px -64px no-repeat;
+	padding-right: 16px;
+	font-weight: normal;
+}
+.homework-title a.expand {
+	margin-right: 10px;
+}
+.homework-title a.expanded {background-position: 26px -30px;}
+.homework-content { color: #333; padding-top: 10px;}
+.homework-content .time { display: block; color: #666;}
+.homework-content img {display:block; width: 100%;}
+.homework-more {display: none;}
+
+.form-body {background-color: #fff;}
+.form { font-size: 1.5em; padding: 0 5px;}
+.form label {display: block; font-size: 1em; padding-top: 8px;}
+.form .input {border: 1px solid #61706b; width: 99%; border-radius: 3px; box-shadow: 3px 3px 5px #cacaca;}
+.form textarea.input {
+	height: 120px;
+}
+.add-img {border: 1px dashed #00ab71;background: url(../imgs/add-img.png) center center no-repeat; height: 40px; border-radius: 5px;}
+.add-img input {width: 100%; height: 40px; opacity: 0;}
+.submit { display: block; width: 99%; text-align: center; border:1px solid #3a886d; background:#00ab71;
+ line-height: 40px; border-radius: 3px; color: #fff; font-size: 1em; margin: 10px 0; }
+
+.homework-detail {padding: 10px; background-color: #ededed; border-bottom: 1px solid #d8d8d8;}
+.question-reply {box-shadow: 0 3px 5px #cacaca; padding:10px 0; margin-bottom: 10px;}
+.question-reply p {color: #000;}
+.question-reply i {color: #00ab71;}
+.question-reply li {padding: 5px 10px;}
 
 footer {
 	position: fixed;
@@ -130,6 +178,7 @@ footer {
 	height: 36px;
 	line-height: 36px;
 	bottom: 0;
+	left:0;
 	background-color: #61706b;
 	text-align: center;
 	color: #fff;
