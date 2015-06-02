@@ -22,7 +22,7 @@ a{color:#575757;text-decoration:none;}
 
 /* public.omission */
 .fl{ float:left;}            .fr{ float:right;}            .tc{ text-align:center;}      .tr{ text-align:right;} 
-.fb{ font-weight:bold;}      .f12{ font-size:12px;}        h3{ font-weight:normal;}      .listop{ padding-top:15px;}
+.fb{ font-weight:bold;}      .f12{ font-size:12px;}        .listop{ padding-top:15px;}
 .mr10{ margin-right:10px;}   .mr15{ margin-right:15px;}    .mL10{ margin-left:10px;}     .mL15{ margin-left:15px;}
 .mt10{ margin-top:10px;}     .mt15{ margin-top:15px;}      .mb10{ margin-bottom:10px;}   .mb15{ margin-bottom:15px;}
 .pdr10 {padding-right: 10px;}
@@ -107,7 +107,7 @@ a{color:#575757;text-decoration:none;}
 	color: #0ea974;
 	font-weight: bold;
 }
-.main-title .btn {
+.btn {
 	float: right;
 	padding: 3px 5px;
 	color: #fff;
@@ -153,11 +153,13 @@ a{color:#575757;text-decoration:none;}
 .homework-content .time { display: block; color: #666;}
 .homework-content img {display:block; width: 100%;}
 .homework-more {display: none;}
+.school-behavior {background: url(../imgs/star.png) no-repeat; background-size: 30px auto;}
 
 .form-body {background-color: #fff;}
 .form { font-size: 1.5em; padding: 0 5px;}
 .form label {display: block; font-size: 1em; padding-top: 8px;}
-.form .input {border: 1px solid #61706b; width: 99%; border-radius: 3px; box-shadow: 3px 3px 5px #cacaca;}
+.form label.font12 {font-size: 0.8em;}
+.form .input {border: 1px solid #61706b; width: 99%; height: 30px; border-radius: 3px; box-shadow: 3px 3px 5px #cacaca;}
 .form textarea.input {
 	height: 120px;
 }
@@ -165,6 +167,26 @@ a{color:#575757;text-decoration:none;}
 .add-img input {width: 100%; height: 40px; opacity: 0;}
 .submit { display: block; width: 99%; text-align: center; border:1px solid #3a886d; background:#00ab71;
  line-height: 40px; border-radius: 3px; color: #fff; font-size: 1em; margin: 10px 0; }
+.check-list {
+ 	border: 1px dashed #61706b;
+ 	padding: 10px 5px 5px;
+ }
+.check-list label {
+ 	float: left;
+ 	height: 30px;
+ 	font-size: 0.8em;
+ 	padding: 0 0 0 15px;
+ 	color: #00ab71;
+ }
+.tab-header {text-align: center; padding: 10px 0; border-bottom: 1px solid #dde8e4;}
+.tab-header a {display: inline-block; line-height: 30px; background-color: #dde8e4; color: #999;}
+.tab-header a.cur {background-color: #0ea974; color: #fff;}
+.left-corner {border-top-left-radius: 15px;border-bottom-left-radius: 15px; padding: 0 5px 0 15px;}
+.right-corner {border-top-right-radius: 15px;border-bottom-right-radius: 15px; padding: 0 15px 0 5px;}
+.tab-item {display: none;}
+.account-list li {overflow: hidden; text-align: center; padding: 3px 10px;}
+.account-list li {}
+.check-mode label {font-size: 0.8em; padding: 3px 0;}
 
 .homework-detail {padding: 10px; background-color: #ededed; border-bottom: 1px solid #d8d8d8;}
 .question-reply {box-shadow: 0 3px 5px #cacaca; padding:10px 0; margin-bottom: 10px;}
@@ -172,6 +194,33 @@ a{color:#575757;text-decoration:none;}
 .question-reply i {color: #00ab71;}
 .question-reply li {padding: 5px 10px;}
 
+.article {
+	padding: 5px 0;
+}
+.article .btn {margin-right: 10px; min-width: 40px; text-align: center;}
+.article-title {
+	font-size: 1.3em;
+	text-align: center;
+}
+.article-time {
+	display: block;
+	color: #999;
+	text-align: center;
+	margin-bottom: 8px;
+}
+.article-content {
+	min-height: 200px;
+	padding: 15px 10px;
+	border-top: 1px solid #d8d8d8;
+	box-shadow: 0 3px 5px #cacaca;
+}
+.article-content img {
+	display: block;
+	margin: 5px auto;
+}
+.article-content p {
+	text-indent: 28px;
+}
 footer {
 	position: fixed;
 	width: 100%;

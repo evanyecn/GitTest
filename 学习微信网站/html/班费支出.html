@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+	<meta content="no-cache" http-equiv="pragma">
+	<meta content="0" http-equiv="expires">
+	<meta content="telephone=no, address=no" name="format-detection">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<title>学校微官网</title>	
+	<link rel="stylesheet" type="text/css" href="resources/css/main.css" />
+	<script type="text/javascript" src="resources/js/jquery.min.js"></script>
+</head>
+<body onselectstart="return true;" ondragstart="return false;" class="form-body">
+	<div class="wrap clearfix">
+		<div class="form">
+			<div class="accout-header tab-header">
+				<a href="班费支出.html" class="left-corner cur">班费支出</a><a href="班费收入.html" class="right-corner">班费收入</a>
+			</div>
+			<label>选择付款方式：</label>
+			<div class="check-mode">
+				<label id="unitary"><input type="radio" name="pay-mode" />统一付款（每人付款金额相同）</label>
+				<label id="single"><input type="radio" name="pay-mode" />单独付款（部分人付款，金额相同）</label>
+				<div class="check-list clearfix" id="students" style="display:none;">
+					<label>
+						学生名1 <input type="checkbox" />
+					</label>
+					<label>
+						学生名2 <input type="checkbox" />
+					</label>
+					<label>
+						学生名3 <input type="checkbox" />
+					</label>
+					<label>
+						学生名1 <input type="checkbox" />
+					</label>
+					<label>
+						学生名2 <input type="checkbox" />
+					</label>
+					<label>
+						学生名3 <input type="checkbox" />
+					</label>
+				</div>
+			</div>
+			<label>付款金额：<input type="text" placeholder="请输入金额" class="input" style="width:60%;" /></label>
+			<a href="#" class="submit">提 交</a>
+		</div>
+		<footer>
+			<a href="javascript:history.go(-1);" class="go-back">返回</a>
+			<a href="index.html" class="to-home"></a>
+			&copy;2015 学校名称
+		</footer>
+	</div>
+</body>
+<script type="text/javascript">
+$(function() {
+	var single = $('#single'),
+		unitary = $('#unitary'),
+		students = $('#students');
+	single.on('click', function() {students.show();})
+	unitary.on('click', function() {students.hide();})
+});
+</script>
+</html>
